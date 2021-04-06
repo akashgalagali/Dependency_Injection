@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<bean id="wish1" class="com.cg.spring.DI_demo.bean.Wisher" lazy-init="true" init-method="wisherinit" destroy-method="wisherdestroy">
+	<property name="message" value="Good Afternoon...!"></property>
+</bean>	
+
+<bean id="add1" class="com.cg.spring.DI_demo.bean.Address">
+<property name="hno" value="7-1-6"></property>
+<property name="street" value="MG street"></property>
+<property name ="city" value ="Hyd"></property>
+<property name="state" value="telangana"></property>
+</bean>
+
+
+<bean id="per1" class="com.cg.spring.DI_demo.bean.Person">
+<property name="ssn" value="7001"></property>
+<property name="name" value="Ajay"></property>
+<property name="address" ref="add1"></property>
+</bean>
+
+<bean id="per2" class="com.cg.spring.DI_demo.bean.Person">
+<property name="ssn" value="7002"></property>
+<property name="name" value="Akshay"></property>
+<property name="address" ref="add2"></property>
+</bean>
+
+<bean id="dpp" class="com.cg.spring.DI_demo.pp.DemoPostProcessor"/>
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<bean id="add2" class="com.cg.spring.DI_demo.bean.Address">
+	<property name="hno" value="8-13-111"></property>
+	<property name="street" value="Yalahanka"></property>
+	<property name ="city" value ="Banglore"></property>
+	<property name="state" value="Karnataka"></property>
+</bean>
+
+
+</beans>

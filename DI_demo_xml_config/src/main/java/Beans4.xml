@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<!-- 	
+<bean id="state1" class="com.cg.spring.DI_demo.bean.State">
+	<property name="stateName" value="Telangana"></property>
+	<property name="cities">
+	<set>
+	<value>Hyderbad</value>
+	<value>secunderabad</value>
+	<value>RangaReddy</value>
+	<value>Medchal</value>
+	<value>Maha</value>
+	</set>
+	</property>
+</bean>
+ -->
+<bean id="state1" class="com.cg.spring.DI_demo.bean.State">
+	<property name="stateName" value="Telangana"></property>
+	<property name="cities">
+	<list>
+	<value>Hyderbad</value>
+	<value>secunderabad</value>
+	<value>RangaReddy</value>
+	<value>Medchal</value>
+	<value>Maha</value>
+	</list>
+	</property>
+</bean> 
+
+<bean id="state2" class="com.cg.spring.DI_demo.bean.State2">
+<property name="stateName" value="Telangana"></property>
+	<property name="cities">
+	<map>
+	<entry key="HYD" value="Hyderbad"/>
+	<entry key="Sec-bad" value="Secunderabad"/>
+	<entry key="RR" value="RangaReddy"/>
+	<entry key="MCL" value="Medchal"/>
+		<entry key="MBN" value="mehabubnagar"/>
+	</map>
+	</property>
+
+</bean>
+
+</beans>
